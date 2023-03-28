@@ -9,7 +9,7 @@
     - Comandos
         git clone link-repositorio
 
-### Adicionar alterações no repositorio
+### Adicionar e subir alterações no repositorio
     git add .
     git commit -m "mensagem"
     git push
