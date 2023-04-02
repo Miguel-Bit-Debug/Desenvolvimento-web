@@ -9,3 +9,4 @@ console.log(idade)
 console.log(altura)
 console.log(nome)
 console.log(ehMaiorDeIdade)
+
