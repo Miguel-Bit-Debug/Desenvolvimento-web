@@ -28,3 +28,6 @@ var pessoas =
 ]
 
 console.log(pessoas)
+
+var filme = {
+}
