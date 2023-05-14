@@ -10,9 +10,6 @@
 #### Comandos do npm
     - npm install | instala uma biblioteca/dependencias
     - npm init -y | inicializa package.json
-
-#### Comandos do git
-
     
 #### Metodos HTTP
     GET     | Buscar dados
