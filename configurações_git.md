@@ -10,6 +10,14 @@
         git clone link-repositorio
 
 ### Adicionar e subir alterações no repositorio
-    git add .
-    git commit -m "mensagem"
-    git push
+    - git add . | prepara arquivos para serem subidos no repositorio
+    - git commit -m "MESSAGE" | Adiciona mensagem 
+    - git push | sobe arquivos no repositorio
+
+#### Criar branch e mudar de branch
+    - git branch nome-da-branch | cria uma branch
+    - git checkout nome-da-branch | muda de branch
+    - git branch -a | listar todas as branches
+    - git checkout -b nome-da-branch | cria uma branch e troca para a branch criada
+    - git branch -d nome-da-branch | apaga uma branch
+    - git pull | atualiza repositorio local
