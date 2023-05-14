@@ -6,10 +6,6 @@ app.use(express.json())
 
 let bancoDeDadosProdutos = []
 
-app.get('/produtos', (req, res) => {
-    return res.status(200).json(bancoDeDadosProdutos)
-})
-
 app.post('/adicionar-produto', (req, res) => {
     let body = req.body
 
