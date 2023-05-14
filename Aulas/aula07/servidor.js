@@ -17,6 +17,7 @@ let produtos = [
     }
 ]
 
+//ENDPOINTS
 app.get("/produtos", function (req, res) {
     return res.send(produtos)
 })
