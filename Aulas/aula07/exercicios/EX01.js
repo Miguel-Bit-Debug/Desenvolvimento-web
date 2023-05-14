@@ -39,10 +39,16 @@ let bandas = [
     }
 ]
 
-app.get('/', function (req, res) {
+app.get('/bandas', function (req, res) {
+    return res.send(bandas)
+})
+
+app.get('/adicionar-bandas', function (req, res) {
     return res.send(bandas)
 })
 
 app.listen(port, function () {
     console.log('Servidor rodando')
 })
+
+
