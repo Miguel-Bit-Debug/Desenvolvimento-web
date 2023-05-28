@@ -13,7 +13,7 @@ app.get('/', async (req, res) => {
         const produtos = await Produto.find()
         return res.status(200).json({ produtos: produtos })
     } catch (error) {
-        return res.status(400).json({ error: "Erro! Tente novamente." })
+        return res.status(400).json({ error: "Erro! Tente novamente. " })
     }
 })
 
