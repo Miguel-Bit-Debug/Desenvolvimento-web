@@ -4,6 +4,7 @@ const app = express()
 const port = 8050
 const connectionString = "mongodb+srv://admin:admin123@appdatabase.ry0gm2w.mongodb.net/"
 const Animal = require('./models/animal')
+const AnimalSilvestre = require('./models/animaisSilvestres')
 
 app.use(express.json())
 
@@ -11,6 +12,16 @@ app.use(express.json())
 app.get("/listar-animais", async (req, res) => {
     try {
         let animais = await Animal.find()
+        return res.status(200).json(animais)
+    } catch (error) {
+        return res.status(500).json(error)
+    }
+})
+
+// ENDPOINT
+app.get("/listar-animais-silvestres", async (req, res) => {
+    try {
+        let animais = await AnimalSilvestre.find()
         return res.status(200).json(animais)
     } catch (error) {
         return res.status(500).json(error)

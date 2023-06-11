@@ -6,6 +6,6 @@ const animalSchema = mongoose.Schema({
     peso: { type: Number, required: true }
 })
 
-const animal = mongoose.model('animais', animalSchema)
+const animalSilvestre = mongoose.model('animais_silvestres', animalSchema)
 
-module.exports = animal
+module.exports = animalSilvestre
