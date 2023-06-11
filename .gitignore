@@ -4,4 +4,7 @@ obj-func
 *.class
 *.java
 node_modules
+teste
+**/teste*
+exemplo-poo
 
