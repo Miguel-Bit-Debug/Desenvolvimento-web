@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import Pessoa from './models/pessoa';
+import Pessoa from './models/funcionario';
+import Analista from './models/analista';
+import Gestor from './models/gestor';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +10,23 @@ import Pessoa from './models/pessoa';
 })
 export class AppComponent {
 
-  public listaPessoas: Pessoa[] = new Array<Pessoa>();
+  public analistas: Analista[] = new Array<Analista>();
+  public gestor: Gestor = new Gestor("Maria", 192076, "Gestora de TI", []);
 
   constructor() {
-    this.listaPessoas.push(new Pessoa("Fulano", 23, "DEV .NET"));
-    this.listaPessoas.push(new Pessoa("Fulana", 22, "Dev Java"));
-    this.listaPessoas.push(new Pessoa("Ciclano", 42, "DEV Android"));
-    this.listaPessoas.push(new Pessoa("Ciclana", 30, "Dev Python"));
-    this.listaPessoas.push(new Pessoa("Beltrano", 27, "Devops Engineer"));
-    this.listaPessoas.push(new Pessoa("Beltrana", 21, "Dev Python"));
-  }
+    this.analistas.push(new Analista("Thompson", 121314, "Analista de infraestrutura", this.gestor.nome));
+    this.analistas.push(new Analista("Amanda", 131517, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("John", 131518, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Elizabete", 131519, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Marcia", 131516, "Analista de cloud", this.gestor.nome));
+    this.analistas.push(new Analista("Robert", 131515, "Analista de cyber-secutiry", this.gestor.nome));
+    this.analistas.push(new Analista("Albert", 131514, "Analista de negocios", this.gestor.nome));
+    this.analistas.push(new Analista("Ana", 131513, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Willian", 131512, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Alfred", 131511, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Junior", 131521, "Analista de sistemas", this.gestor.nome));
+    this.analistas.push(new Analista("Alessandra", 131523, "Analista de sistemas", this.gestor.nome));
 
-  public detalhes(): void {
-    alert('teste')
+    this.gestor.nomeSubordinados = this.analistas.map(analista => analista.nome);
   }
 }
