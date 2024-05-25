@@ -12,3 +12,4 @@ alert("O resultado da subtração é: " + subtracao)
 alert('O resultado da multiplicação é: ' + multiplicacao)
 alert('O resultado da potenciacao é: ' + potenciacao)
 alert('O resultado da divisão é: ' + divisao)
+
