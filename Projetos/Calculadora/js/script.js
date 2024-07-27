@@ -10,7 +10,7 @@ for (let indiceNumero = 0; indiceNumero < 10; indiceNumero++) {
 
     if (indiceNumero % 2 == 0) {
         botao.className = 'btn-par btn'
-    } else {        
+    } else {
         botao.className = 'btn-impar btn'
     }
 
@@ -38,6 +38,7 @@ criarBotao('btn-sub', 'btn btn-calculo', '-')
 criarBotao('btn-mult', 'btn btn-calculo', '*')
 criarBotao('btn-div', 'btn btn-calculo', '/')
 criarBotao('btn-result', 'btn btn-calculo', '=')
+criarBotao('btn-cotacao', 'btn btn-calculo', 'Cotação Dolar')
 
 document.getElementById('btn-soma').addEventListener('click', (evento) => {
     numeroDigitado += evento.target.value
